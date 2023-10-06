@@ -59,6 +59,8 @@ main {
 
 .main-section {
     padding: 2rem 3rem;
+    color: var(--desaturated-blue-color);
+    font-size: 1.1rem;
 }
 
 .main-section h1 {
@@ -67,16 +69,10 @@ main {
     color: var(--dark-blue-color);
 }
 
-.main-section p,
-.main-section span {
-    color: var(--desaturated-blue-color);
-}
-
 .main-section p {
     width: 85%;
     margin: 0 auto 1.5rem auto;
     line-height: 1.6em;
-    font-size: 1.1rem;
 }
 
 figure {
@@ -106,17 +102,13 @@ figure img {
 .billing-container section {
     flex: 1 1 40%;
     text-align: initial;
+    font-size: 1.1rem;
 }
 
 .billing-container section h4 {
     margin: 0 0 0.4rem 0;
     font-weight: 900;
     color: var(--dark-blue-color);
-    font-size: 1.1rem;
-}
-
-.billing-container section span {
-    font-size: 1.1rem;
 }
 
 .billing-container a {
