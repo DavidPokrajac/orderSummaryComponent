@@ -39,6 +39,7 @@ body::before {
 
 button {
     font-family: inherit;
+    font-size: inherit;
     border: none;
     background: none;
     display: block;
@@ -53,6 +54,7 @@ main {
     max-width: 450px;
     text-align: center;
     background-color: white;
+    box-shadow: 0px 20px 20px hsla(224, 23%, 55%, 0.2);
 }
 
 .main-section {
@@ -61,8 +63,7 @@ main {
 
 .main-section h1 {
     font-weight: 900;
-    font-size: 1.75rem;
-    margin-top: 0;
+    font-size: 1.9rem;
     color: var(--dark-blue-color);
 }
 
@@ -72,9 +73,10 @@ main {
 }
 
 .main-section p {
-    width: 80%;
+    width: 85%;
     margin: 0 auto 1.5rem auto;
     line-height: 1.6em;
+    font-size: 1.1rem;
 }
 
 figure {
@@ -107,27 +109,76 @@ figure img {
 }
 
 .billing-container section h4 {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.4rem 0;
     font-weight: 900;
     color: var(--dark-blue-color);
+    font-size: 1.1rem;
+}
+
+.billing-container section span {
+    font-size: 1.1rem;
 }
 
 .billing-container a {
     flex: 1 1 20%;
     text-decoration: underline var(--bright-blue-color);
     color: var(--bright-blue-color);
+    font-weight: 700;
+    font-size: 0.9rem;
 }
 
 .buttons {
     margin-top: 2rem;
+    font-size: 1rem;
 }
 
 .button.proceed {
     color: var(--very-pale-blue-color);
     background: var(--bright-blue-color);
     margin-bottom: 1rem;
+    box-shadow: 0px 16px 15px hsla(245, 75%, 52%, 0.2);
 }
 
 .button.cancel {
     color: var(--desaturated-blue-color);
+}
+
+@media (max-width: 500px) {
+    main {
+        width: 90%;
+    }
+
+    body::before {
+        background-image: url('./images/pattern-background-mobile.svg');
+    }
+
+    .main-section {
+        padding: 1rem 1.5rem;
+    }
+
+    .main-section h1 {
+        font-size: 1.5rem;
+    }
+
+    .main-section p {
+        width: 90%;
+        font-size: 1rem;
+    }
+
+    .billing-container {
+        padding: 0.5rem;
+    }
+
+    .billing-container section {
+        margin-left: 5px;
+    }
+
+    .billing-container section h4 {
+        font-size: 1rem;
+        margin-bottom: 2px;
+    }
+
+    .billing-container section span {
+        font-size: 1rem;
+    }
 }
